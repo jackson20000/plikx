@@ -91,7 +91,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //pie-chart --><!-- index page sales reviews visitors pie chart -->
 
 	<!-- requried-jsfiles-for owl -->
-					<link href="<?php echo base_url(); ?>assects/dashboard/css/owl.carousel.css" rel="stylesheet">
+					<!-- <link href="<?php echo base_url(); ?>assects/dashboard/css/owl.carousel.css" rel="stylesheet">
 					<script src="<?php echo base_url(); ?>assects/dashboard/js/owl.carousel.js"></script>
 						<script>
 							$(document).ready(function() {
@@ -103,7 +103,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									nav:true,
 								});
 							});
-						</script>
+						</script> -->
 					<!-- //requried-jsfiles-for owl -->
 </head> 
 <body class="cbp-spmenu-push">
