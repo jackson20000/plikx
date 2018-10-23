@@ -20,16 +20,20 @@ class Dashboard extends CI_Controller {
 	 */
 	function __construct() {
          parent::__construct();
-         $this->load->helper('url');
+		 $this->load->helper('url');
+		 $this->load->library('session');
     }
 
 	public function index()
 	{   
-		$this->load->view('dashboard/login');
-	}
-	public function admin()
-	{
+		if($this->session->userdata('logged_in'))
+		{
+		$username=$this->session->userdata('item');
 		$this->load->view('dashboard/header');
 		$this->load->view('dashboard/footer');
+		}
+		else{
+		$this->load->view('dashboard/login');
+		}
 	}
 }
