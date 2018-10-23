@@ -33,7 +33,10 @@ class Dashboard extends CI_Controller {
 		$this->load->view('dashboard/footer');
 		}
 		else{
-		$this->load->view('dashboard/login');
+			$data = array(
+				'error' => true
+			);
+		$this->load->view('dashboard/login',$data);
 		}
 	}
 }

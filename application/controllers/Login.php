@@ -27,7 +27,10 @@ class Login extends CI_Controller {
 
 	public function index()
 	{   
-		$this->load->view('dashboard/login');
+        $data = array(
+            'error' => true
+        );
+		$this->load->view('dashboard/login',$data);
     }
     public function verify(){
         if(isset($_POST['username'])){
@@ -46,7 +49,10 @@ class Login extends CI_Controller {
         redirect('dashboard','refresh');
         }
         else{
-            $this->load->view('dashboard/login');
+            $data = array(
+                'error' => false
+            );
+            $this->load->view('dashboard/login',$data);
         }
     }
     public function logout()
@@ -55,6 +61,9 @@ class Login extends CI_Controller {
             $_SESSION['username'],
             $_SESSION['logged_in']
         );
-        $this->load->view('dashboard/login');
+        $data = array(
+            'error' => true
+        );
+        $this->load->view('dashboard/login',$data);
     }
 }

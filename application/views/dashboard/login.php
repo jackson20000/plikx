@@ -13,6 +13,10 @@
         <input type="password" name="password" placeholder="Password" required="required" />
         <input type="submit" class="btn btn-primary btn-block btn-large margintop" value="Let me in.">
     </form>
+    <?php if(!$error) { 
+    echo '<div class="error"></div>';
+    }
+    ?>
 </div>
 
 <div id="particles-js"></div>
