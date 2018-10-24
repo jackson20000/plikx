@@ -13,8 +13,9 @@
         <input type="password" name="password" placeholder="Password" required="required" />
         <input type="submit" class="btn btn-primary btn-block btn-large margintop" value="Let me in.">
     </form>
-    <?php if(!$error) { 
-    echo '<div class="error"></div>';
+    <?php if(!$error) { ?>
+    <div class="error"><p style="color:red">Username or Password is incorrect</p></div>
+    <?php
     }
     ?>
 </div>
