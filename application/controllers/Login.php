@@ -30,7 +30,12 @@ class Login extends CI_Controller {
         $data = array(
             'error' => true
         );
+        if(!$this->session->userdata('logged_in')){
 		$this->load->view('dashboard/login',$data);
+        }
+        else{
+            redirect(dashboard);
+        }
     }
     public function verify(){
         if(isset($_POST['username'])){

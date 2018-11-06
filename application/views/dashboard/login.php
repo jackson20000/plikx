@@ -23,8 +23,8 @@
 <div class="login">
 	<h1>Login</h1>
     <form name ="userinput" action="<?php echo base_url(); ?>login/verify" method="post">
-    	<input type="text" name="username" placeholder="Username" required="required" />
-        <input type="password" name="password" placeholder="Password" required="required" style="margin-top: 10px;" />
+    	<input class="txtcolor" type="text" name="username" placeholder="Username" required="required" />
+        <input class="txtcolor" type="password" name="password" placeholder="Password" required="required" style="margin-top: 10px;" />
         <input type="submit" class="btn btn-primary btn-block btn-large margintop" value="Let me in.">
     </form>
 </div>
